@@ -296,6 +296,17 @@ button {
     column-gap: 1.5rem !important;
     row-gap: 2rem !important;
   }
+
+  /* Video section  */
+  .video-section-content .info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .video-section-content .info .description {
+    min-width: 50%;
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 480px) {
@@ -336,5 +347,29 @@ button {
   }
   .trusted-brands-section .brands {
     flex-wrap: wrap;
+  }
+  /* Video section */
+  .video-section {
+    padding: 30px 10px;
+    padding-bottom: 0px;
+  }
+  .video-section-content {
+    margin: 0;
+    padding: 10px;
+    max-width: 90%;
+    padding-bottom: 0px;
+    margin: auto;
+    gap: 3rem;
+  }
+
+  .video-section-content .info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .video-section-content .info .heading {
+    font-size: 1.8rem;
+  }
+  .video-section-content .info .description {
+    line-height: 1.3;
   }
 }
