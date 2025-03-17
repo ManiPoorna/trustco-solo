@@ -187,6 +187,42 @@ button {
   width: 6rem;
 }
 
+/* Video Section */
+.video-section {
+  padding: 80px 30px;
+  background-color: var(--primary-color);
+  padding-bottom: 0px;
+}
+.video-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 80%;
+  margin: auto;
+}
+.video-section-content .info {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: start;
+}
+.video-section-content .info .heading {
+  font-size: 3.125rem;
+  min-width: 53%;
+  color: #fff;
+}
+.video-section-content .info .heading span {
+  color: #f0b73f;
+}
+.video-section-content .info .description {
+  color: #fff;
+  line-height: 1.8;
+}
+
+.video-section-content .video img {
+  width: 100%;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   /* Hero section Responsive */
