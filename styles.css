@@ -33,6 +33,7 @@ button {
   font-weight: 600;
   height: 3rem;
   cursor: pointer;
+  width: fit-content;
 }
 .primary-btn {
   background: var(--btn-bg-primary);
@@ -221,6 +222,52 @@ button {
 
 .video-section-content .video img {
   width: 100%;
+  margin-bottom: -3px;
+}
+
+/* Benifits section */
+.benifits-section {
+  padding: 80px 30px;
+  background-color: #fff;
+}
+.benifits-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  max-width: 80%;
+  margin: auto;
+}
+.benifits-section-content .main-card {
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.benifits-section-content .benifit-card {
+  max-width: 25%;
+  background-color: #f2f5f6;
+  padding: 32px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.benifits-section-content .benifit-card img {
+  width: 30%;
+}
+.benifits-section-content .benifit-card .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.benifits-section-content .benifit-card .description {
+  color: #404040;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.benifits-section-content .main-card h1 {
+  font-size: 3.125rem;
 }
 
 /* Responsive Breakpoints */
