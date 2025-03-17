@@ -1,8 +1,8 @@
 /* Global Styles */
 * {
   font-family: "Lato", sans-serif;
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -41,6 +41,47 @@ button {
 .secondary-btn {
   background: var(--btn-bg-secondary);
   color: var(--btn-color-secondary);
+}
+
+/* Navigation bar Styling */
+.navigation-bar {
+  background: var(--body-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20px;
+}
+
+.navigation-bar .links ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.navigation-bar .links ul a {
+  text-decoration: none;
+  color: var(--heading-color);
+}
+.navigation-bar .links ul li {
+  cursor: pointer;
+}
+
+.navigation-bar .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation-bar .buttons button {
+  padding: var(--btn-padding);
+  border: none;
+  border-radius: 42px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 92px;
+  height: 50px;
+  cursor: pointer;
 }
 
 /* Hero Section */
@@ -118,6 +159,28 @@ button {
 .cta-buttons button {
   width: fit-content;
   margin: auto;
+}
+
+/* Trusted brands styling */
+.trusted-brands-section {
+  padding: 50px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.trusted-brands-section p {
+  font-weight: 500;
+}
+
+.trusted-brands-section .brands {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+}
+.trusted-brands-section .brands img {
+  width: 6rem;
 }
 
 /* Responsive Breakpoints */
@@ -223,26 +286,4 @@ button {
   .trusted-brands-section .brands {
     flex-wrap: wrap;
   }
-}
-
-/* Trusted brands styling */
-.trusted-brands-section {
-  padding: 50px 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-}
-.trusted-brands-section p {
-  font-weight: 500;
-}
-
-.trusted-brands-section .brands {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 4rem;
-}
-.trusted-brands-section .brands img {
-  width: 6rem;
 }
