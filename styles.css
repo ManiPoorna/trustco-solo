@@ -1,0 +1,18 @@
+* {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #007bff;
+  --heading-color: #12141d;
+  --sub-heading-color: #404040;
+  --link-colot: #043a53;
+  --primary-button-bg: #043a53;
+  --primary-button-color: #ffffff;
+  --secondary-button-bg: #ffffff;
+  --secondary-button-bg: #12141d;
+  --selected_link-color: #043a53;
+}
