@@ -6,13 +6,105 @@
 }
 
 :root {
-  --primary-color: #007bff;
+  --primary-color: #043a53;
+  --secondary-color: #12141d;
   --heading-color: #12141d;
   --sub-heading-color: #404040;
-  --link-colot: #043a53;
+  --link-color: #043a53;
   --primary-button-bg: #043a53;
   --primary-button-color: #ffffff;
-  --secondary-button-bg: #ffffff;
+  --secondary-button-color: #ffffff;
   --secondary-button-bg: #12141d;
   --selected-link-color: #043a53;
+  --link-color: #043a53;
+  --btn-bg-primary: #043a53;
+  --btn-color-primary: #fff;
+  --btn-bg-secondary: #fff;
+  --btn-color-secondary: #12141d;
+  --btn-padding: 8px 16px;
+  --body-bg: #f2f5f6;
+}
+
+/* Buttons */
+button {
+  padding: var(--btn-padding);
+  border: none;
+  border-radius: 42px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  cursor: pointer;
+}
+.primary-btn {
+  background: var(--btn-bg-primary);
+  color: var(--btn-color-primary);
+}
+
+.secondary-btn {
+  background: var(--btn-bg-secondary);
+  color: var(--btn-color-secondary);
+}
+
+/* Hero section styling */
+
+.hero-section {
+  display: flex;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: var(--body-bg);
+  padding: 60px 80px;
+}
+.hero-section .hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 88%;
+  background-color: var(--body-bg);
+}
+
+.hero-section .hero-content .content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-weight: 600;
+}
+.hero-section .hero-content .content .info h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.hero-section .hero-content .content .info p {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  opacity: 0.7;
+}
+.hero-section .hero-content .content .info span {
+  color: var(--primary-color);
+}
+
+.hero-section .hero-content .content .cta-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-buttons .get-started {
+  box-shadow: 0px 23px 47px 0px #043a533d;
+}
+
+.cta-buttons .check-our-video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 24px;
+  background-color: transparent;
+  outline: none;
+  color: var(--primary-color);
+}
+.cta-buttons .check-our-video img {
+  box-shadow: 0px 23px 47px 0px #043a533d;
 }
