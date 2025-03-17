@@ -197,3 +197,25 @@ button {
     height: auto;
   }
 }
+
+/* Trusted brands styling */
+.trusted-brands-section {
+  padding: 50px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.trusted-brands-section p{
+  font-weight: 500;
+}
+
+.trusted-brands-section .brands {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+}
+.trusted-brands-section .brands img {
+  width:6rem;
+}
