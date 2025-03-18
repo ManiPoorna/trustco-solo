@@ -343,9 +343,6 @@ button {
   font-size: 2rem;
   color: var(--primary-color);
 }
-/* Responsive styles */
-@media (max-width: 768px) {
-}
 
 @media (min-width: 769px) {
   .sales {
@@ -438,6 +435,14 @@ button {
     min-width: 50%;
     line-height: 1.7;
   }
+
+  /* Bulinding bridges */
+  .building-bridges{
+    padding: 40px 0px;
+  }
+  .building-bridges .info h1 {
+    font-size: 1.5rem;
+  }
   /* Numbers Sectoin */
   .numbers-section {
     padding: 50px;
@@ -513,9 +518,20 @@ button {
   }
 
   /* Benifits section */
+  .benifits-section{
+    padding: 40px;
+  }
   .benifits-section-content {
     flex-direction: column;
     max-width: 100%;
+  }
+  .benifits-section-content .main-card {
+   /* gap: 1rem; */
+    align-items: center;
+    text-align: center;
+  }
+  .benifits-section-content .main-card h1 {
+    font-size: 2rem;
   }
 
   /* Building bridges */
@@ -534,5 +550,10 @@ button {
   }
   .building-bridges .info h1 {
     font-size: 2rem;
+  }
+
+  /* Number Section  */
+  .numbers-section {
+    padding: 0px;
   }
 }
