@@ -4,39 +4,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Google fonts LATO -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
+  <!-- Document Title -->
   <title>Trustco</title>
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <center>
-      <h1>Navigation Content</h1>
-    </center>
+  <!-- Navigation content-->
+  <nav class="navigation-bar">
+    <div class="logo">
+      <img src="./assets/trustco-logo.svg" alt="trustco-logo">
+    </div>
+    <div class="links">
+      <ul>
+        <a href="#">
+          <li>Features</li>
+        </a><a href="#">
+          <li>Solutions</li>
+        </a><a href="#">
+          <li>Company</li>
+        </a><a href="#">
+          <li>Resources</li>
+        </a><a href="#">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+    <div class="buttons">
+      <button class="secondary-btn">Login</button>
+      <button class="primary-btn">Signup</button>
+    </div>
+    <div class="hamburger-menu">
+      <img src="./assets/hamburger.svg" alt="menu">
+    </div>
   </nav>
 
-  <!-- Header -->
-  <header>
-    <center>
-      <h1>Header Content</h1>
-    </center>
-  </header>
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-content">
+      <div class="left-img image">
+        <img src="./assets/hero-01.svg" alt="hero-01">
+      </div>
+      <div class="content">
+        <div class="info">
+          <h1>Find a High-Potential <br>
+            Customers with <span class="special-text">Trustco.</span></h1>
+          <p> We provide sales teams and professionals with the knowledge, skill and discipline they need to be 10x more
+            successful.</p>
+        </div>
+        <div class="cta-buttons">
+          <button class="get-started primary-btn">Get Started</button>
+          <button class="check-our-video">
+            <img src="./assets/Play-btn.svg" alt="play">
+            <p>Check Our Video</p>
+          </button>
+        </div>
+      </div>
+      <div class="right-img image">
+        <img src="./assets/hero-02.svg" alt="hero-02">
+      </div>
+    </div>
+    <div class="mobile-images">
+      <div class="left-img image">
+        <img src="./assets/hero-01.svg" alt="hero-01">
+      </div>
+      <div class="right-img image">
+        <img src="./assets/hero-02.svg" alt="hero-02">
+      </div>
+    </div>
+  </section>
 
-  <!-- Main -->
-  <main>
-    <center>
-      <h1>Main Content</h1>
-    </center>
-  </main>
+  <!-- Trusted brands -->
+  <section class="trusted-brands-section" id="trusted-brands">
+    <p class="heading">Trusted by the best in the world</p>
+    <div class="brands">
+      <img src="./assets/Google.svg" alt="google">
+      <img src="./assets/Atlassian.svg" alt="atlassian">
+      <img src="./assets/Canon.svg" alt="canon">
+      <img src="./assets/Walmart.svg" alt="walmart">
+      <img src="./assets/Amazon.svg" alt="amazon">
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer>
-    <center>
-      <h1>Footer Content</h1>
-    </center>
-  </footer>
+  <!-- Video Section -->
+  <section class="video-section" id="video-section">
+    <div class="video-section-content">
+      <div class="info">
+        <h1 class="heading">
+          High-Level Sales
+          <span class="special-text">Teams & Professionals</span>
+        </h1>
+        <div class="description">Circuit is flexible and affordable and offers you
+          exceptional support to achieve your
+          career goals. Circuit is a Global
+          training provider based across the UK that specialises.</div>
+      </div>
+      <div class="video">
+        <img src="./assets/Video-player.svg" alt="video player">
+      </div>
+    </div>
+  </section>
+
+  <!-- Benifits section -->
+  <section class="benifits-section" id="benifits">
+    <div class="benifits-section-content">
+      <div class="main-card">
+        <button class="primary-btn">
+          Beneficial
+        </button>
+        <h1>Beneficial Elements</h1>
+        <p>An awesome & poweful tools for your business, increase business revenue</p>
+      </div>
+      <div class="benifit-card">
+        <img src="./assets/benifit1.svg" alt="img">
+        <div class="title">Happy Customers</div>
+        <div class="description">
+          Productive agents are happy agents. Give them all the support tools and information they need to best serve
+          your customers.
+        </div>
+      </div>
+      <div class="benifit-card">
+        <img src="./assets/benifit2.svg" alt="img">
+        <div class="title">Best Integrations</div>
+        <div class="description">
+          Our software is powerful enough to handle the most complex business, yet flexible enough to scale with you as
+          you grow.
+        </div>
+      </div>
+      <div class="benifit-card">
+        <img src="./assets/benifit3.svg" alt="img">
+        <div class="title">Grow Without Problems</div>
+        <div class="description">
+          with evaluating in depth variety of data sets and including the speed of tech adaptation we can build bridges
+          between
+          any companies and their customers.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Building bridges Section -->
+  <section class="building-bridges" id="building-bridges">
+    <div class="left-hero">
+      <img src="./assets/building-bridge-left-hero.svg" alt="hero image">
+    </div>
+    <div class="info">
+      <h1>Building bridges between <span>companies and customers</span></h1>
+      <p>with evaluating in depth variety of data sets and including the speed of tech adaptation we can build birdges
+        between
+        any companies and their customers.</p>
+      <button class="primary-btn">
+        View Reports <img src="./assets/arrow-white.svg" alt="arrow">
+      </button>
+    </div>
+  </section>
 
 </body>
 
