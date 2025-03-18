@@ -457,6 +457,60 @@ button {
   border-radius: 8px !important;
 }
 
+/* Blogs Section */
+.carousel-item .blog-card {
+  max-width: 30%;
+  box-shadow: 0px 1px 2px 0px #00000014;
+}
+.carousel-item .blog-card .content {
+  padding: 1rem;
+}
+
+.carousel-item .blog-card .content .title h5 {
+  font-weight: 600;
+}
+.carousel-item .blog-card .content p {
+  font-size: 14px !important;
+}
+
+.carousel-item .blog-card .content .blog-date {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 0px;
+}
+.carousel-item .blog-card .content .blog-date h6 {
+  font-weight: 600;
+  margin: 0;
+}
+.carousel-item .blog-card .content .blog-date p {
+  margin: 0;
+}
+
+.carousel-item .blog-card img {
+  width: 100%;
+}
+.carousel-item .blog-card .read-story {
+  cursor: pointer;
+  display: flex;
+  align-items: self-end;
+  justify-content: start;
+  margin: 0px;
+  gap: 5px;
+  font-weight: 600;
+}
+.carousel-item .blog-card .read-story img {
+  width: 20px;
+}
+.carousel-item .blogs {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.for-mobile-view {
+  display: none;
+}
+
 @media (min-width: 769px) {
   .sales {
     flex: 1 1 calc(25% - 32px); /* 4 divs side by side in laptop view */
@@ -572,6 +626,21 @@ button {
   }
   .testimonial-card {
     width: 100%;
+  }
+
+  /* blogs Section */
+  
+  .for-desktop {
+    display: none;
+  }
+  .for-mobile-view {
+    display: block;
+  }
+  #carouselExampleIndicators1 {
+    display: none;
+  }
+  .blog-card {
+    max-width: 100% !important;
   }
 }
 
@@ -712,5 +781,19 @@ button {
 
   .carousel-indicators {
     top: -2rem;
+  }
+
+  /* blogs Section */
+  .for-desktop {
+    display: none;
+  }
+  .for-mobile-view {
+    display: block;
+  }
+  #carouselExampleIndicators1 {
+    display: none;
+  }
+  .blog-card {
+    max-width: 100% !important;
   }
 }
