@@ -318,6 +318,42 @@ button {
   right: -10px;
 }
 
+/* Numbers section stylings */
+.numbers-section {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.numbers-section .sales {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  flex-basis: 100px;
+  gap: 16px;
+}
+.numbers-section .sales h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+}
+
+@media (min-width: 769px) {
+  .sales {
+    flex: 1 1 calc(25% - 32px); /* 4 divs side by side in laptop view */
+    margin: 16px;
+  }
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   /* Hero section Responsive */
@@ -401,6 +437,14 @@ button {
   .video-section-content .info .description {
     min-width: 50%;
     line-height: 1.7;
+  }
+  /* Numbers Sectoin */
+  .numbers-section {
+    padding: 50px;
+  }
+  .numbers-section .sales {
+    flex: 1 1 calc(50% - 32px);
+    margin: 16px;
   }
 }
 
