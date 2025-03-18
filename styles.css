@@ -24,6 +24,11 @@
   --body-bg: #f2f5f6;
 }
 
+/* Universal */
+p {
+  font-size: 1.125rem !important;
+}
+
 /* Buttons */
 button {
   padding: var(--btn-padding);
@@ -266,11 +271,19 @@ button {
 }
 .benifits-section-content .benifit-card .description {
   color: #404040;
-  font-size: 14px;
+  font-size: 1.125rem;
   line-height: 1.7;
 }
 .benifits-section-content .main-card h1 {
   font-size: 3.125rem;
+}
+
+/* Meet founder */
+.meet-founders {
+  max-width: 80%;
+  justify-content: space-between !important;
+  align-items: center;
+  margin: auto;
 }
 
 /* Building bridges */
@@ -302,6 +315,8 @@ button {
   color: #92a7b0;
 }
 .building-bridges .info p {
+  font-weight: 500;
+  font-size: 1.125rem;
   line-height: 1.7;
 }
 .building-bridges .info button {
@@ -437,7 +452,7 @@ button {
   }
 
   /* Bulinding bridges */
-  .building-bridges{
+  .building-bridges {
     padding: 40px 0px;
   }
   .building-bridges .info h1 {
@@ -518,7 +533,7 @@ button {
   }
 
   /* Benifits section */
-  .benifits-section{
+  .benifits-section {
     padding: 40px;
   }
   .benifits-section-content {
@@ -526,7 +541,7 @@ button {
     max-width: 100%;
   }
   .benifits-section-content .main-card {
-   /* gap: 1rem; */
+    /* gap: 1rem; */
     align-items: center;
     text-align: center;
   }
