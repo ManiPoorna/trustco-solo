@@ -217,7 +217,7 @@ button {
 }
 .video-section-content .info .description {
   color: #fff;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 .video-section-content .video img {
@@ -271,6 +271,51 @@ button {
 }
 .benifits-section-content .main-card h1 {
   font-size: 3.125rem;
+}
+
+/* Building bridges */
+.building-bridges {
+  padding: 80px 0px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.building-bridges > div {
+  flex-basis: 50%;
+  /* flex: 1; */
+}
+
+.building-bridges .left-hero img {
+  width: 100%;
+}
+.building-bridges .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 40%;
+}
+.building-bridges .info h1 {
+  font-size: 3.125rem;
+}
+.building-bridges .info h1 span {
+  color: #92a7b0;
+}
+.building-bridges .info p {
+  line-height: 1.7;
+}
+.building-bridges .info button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.building-bridges .info button img {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f2f5f629;
+  position: relative;
+  right: -10px;
 }
 
 /* Responsive Breakpoints */
@@ -355,7 +400,7 @@ button {
 
   .video-section-content .info .description {
     min-width: 50%;
-    line-height: 1.4;
+    line-height: 1.7;
   }
 }
 
@@ -420,7 +465,7 @@ button {
     font-size: 1.8rem;
   }
   .video-section-content .info .description {
-    line-height: 1.3;
+    line-height: 1.7;
   }
 
   /* Benifits section */
