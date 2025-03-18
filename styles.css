@@ -33,7 +33,7 @@ p {
 button {
   padding: var(--btn-padding);
   border: none;
-  border-radius: 42px;
+  border-radius: 42px !important;
   font-size: clamp(0.8rem, 1.2vw, 1rem);
   font-weight: 600;
   height: 3rem;
@@ -119,6 +119,7 @@ button {
 .hero-section .hero-content .content .info h1 {
   font-size: clamp(1.8rem, 5vw, 3.2rem);
   text-align: center;
+  font-weight: 600;
 }
 
 .hero-section .hero-content .content .info p {
@@ -276,6 +277,7 @@ button {
 }
 .benifits-section-content .main-card h1 {
   font-size: 3.125rem;
+  font-weight: 600;
 }
 
 /* Meet founder */
@@ -310,6 +312,7 @@ button {
 }
 .building-bridges .info h1 {
   font-size: 3.125rem;
+  font-weight: 600;
 }
 .building-bridges .info h1 span {
   color: #92a7b0;
@@ -357,6 +360,98 @@ button {
 .numbers-section .sales h1 {
   font-size: 2rem;
   color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Testimonial */
+.testimonial-section {
+  padding: 80px 30px;
+  background-color: var(--body-bg);
+}
+.testimonial-section .testimonial-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 80%;
+  margin: auto;
+}
+.testimonial-section-content .heading {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.testimonial-section-content .heading h1 {
+  font-weight: 600;
+  font-size: 3.125rem;
+}
+.testimonial-section-content .heading p {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.testimonial-card {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-basis: 380px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 2px 0px #00000014;
+  min-height: 230px;
+}
+.testimonial-card .quotation {
+  position: absolute;
+  top: -10px;
+  color: #f0b73f;
+  font-size: 90px !important;
+}
+.testimonial-card p {
+  margin: 0;
+}
+.testimonial-card .person-info {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.testimonial-card .person-info .person-name {
+  font-weight: 600;
+  margin: 0;
+}
+.testimonial-card .person-info .person-role {
+  margin: 0;
+  font-size: 14px !important;
+}
+
+.carousel-inner {
+  padding: 1rem !important;
+}
+.carousel-item .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-indicators {
+  bottom: -3rem !important;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: var(--primary-color) !important;
+  height: 8px !important;
+  width: 100px !important;
+  border-radius: 8px !important;
 }
 
 @media (min-width: 769px) {
@@ -384,6 +479,7 @@ button {
 
   .hero-content .info h1 {
     font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 800;
   }
 
   .hero-content .info p {
@@ -465,6 +561,11 @@ button {
   .numbers-section .sales {
     flex: 1 1 calc(50% - 32px);
     margin: 16px;
+  }
+
+  /* Testimonials */
+  .mobile-hide {
+    display: none;
   }
 }
 
@@ -570,5 +671,25 @@ button {
   /* Number Section  */
   .numbers-section {
     padding: 0px;
+  }
+
+  /* Founders Section */
+  .meet-founders {
+    padding: 40px 0px 0px 0px;
+    flex-direction: column;
+  }
+  .meet-founders .info {
+    padding: 0px;
+    text-align: center;
+  }
+  /* Testimonials */
+  .testimonial-section .testimonial-section-content {
+    max-width: 100%;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .testimonial-card {
+    width: 100%;
   }
 }
