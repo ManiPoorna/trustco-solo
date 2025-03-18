@@ -473,4 +473,22 @@ button {
     flex-direction: column;
     max-width: 100%;
   }
+
+  /* Building bridges */
+  .building-bridges {
+    padding: 20px 0px;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+  }
+  .building-bridges .info {
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    align-items: center;
+  }
+  .building-bridges .info h1 {
+    font-size: 2rem;
+  }
 }
