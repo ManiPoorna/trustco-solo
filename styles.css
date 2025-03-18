@@ -434,6 +434,9 @@ button {
   margin: 0;
   font-size: 14px !important;
 }
+.testimonial-section-content .heading .special {
+  display: none;
+}
 
 .carousel-inner {
   padding: 1rem !important;
@@ -567,6 +570,9 @@ button {
   .mobile-hide {
     display: none;
   }
+  .testimonial-card {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -691,5 +697,20 @@ button {
   }
   .testimonial-card {
     width: 100%;
+  }
+  .testimonial-section-content .heading h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .testimonial-section-content .heading p {
+    display: none;
+  }
+  .testimonial-section-content .heading .special {
+    display: block;
+    margin: auto;
+  }
+
+  .carousel-indicators {
+    top: -2rem;
   }
 }
