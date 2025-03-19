@@ -520,36 +520,37 @@ button {
   background-color: var(--secondary-color);
   position: relative;
 }
-.cta-banner .cta-banner-contnet {
+.cta-banner .cta-banner-content {
   background-color: inherit;
   max-width: 80%;
   margin: auto;
   display: flex;
   justify-content: start;
-  padding: 67px 30px;
+  padding: 70px 30px;
 }
-.cta-banner .cta-banner-contnet .content {
+.cta-banner .cta-banner-content .content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   max-width: 60%;
 }
-.cta-banner .cta-banner-contnet .content h1 {
+.cta-banner .cta-banner-content .content h1 {
   font-size: 3.125rem;
   color: #fff;
+  font-weight: 600;
 }
-.cta-banner .cta-banner-contnet .content button {
+.cta-banner .cta-banner-content .content button {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
   background-color: var(--yellow-color);
 }
-.cta-banner .cta-banner-contnet .content p {
+.cta-banner .cta-banner-content .content p {
   color: #d4d4d4;
 }
 
-.cta-banner .cta-banner-contnet .content button img {
+.cta-banner .cta-banner-content .content button img {
   background-color: #00000029;
   border-radius: 50%;
   padding: 10px;
@@ -557,14 +558,19 @@ button {
   right: -10px;
 }
 
-.cta-banner .cta-banner-contnet .image {
+.cta-banner .cta-banner-content .image {
   position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 50%;
+  height: 100%;
+}
+
+.cta-banner .cta-banner-content .image img {
+  height: 100%;
 }
 
 @media (min-width: 769px) {
@@ -697,6 +703,33 @@ button {
   }
   .blog-card {
     max-width: 100% !important;
+  }
+
+  /* CTA Banner */
+
+  .cta-banner .cta-banner-content {
+    position: static;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .cta-banner .cta-banner-content .content {
+    padding: 2.5rem;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .cta-banner .cta-banner-content .content h1 {
+    font-size: 3.125rem;
+  }
+
+  .cta-banner .cta-banner-content .image {
+    max-width: 100%;
+    position: static;
+  }
+  .cta-banner .cta-banner-content .image img {
+    height: 100%;
   }
 }
 
@@ -851,5 +884,32 @@ button {
   }
   .blog-card {
     max-width: 100% !important;
+  }
+
+  /* CTA Banner */
+
+  .cta-banner .cta-banner-content {
+    position: static;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .cta-banner .cta-banner-content .content {
+    padding: 2.5rem;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .cta-banner .cta-banner-content .content h1 {
+    font-size: 2.125rem;
+  }
+
+  .cta-banner .cta-banner-content .image {
+    max-width: 100%;
+    position: static;
+  }
+  .cta-banner .cta-banner-content .image img {
+    height: 100%;
   }
 }
