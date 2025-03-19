@@ -29,7 +29,7 @@
 /* Universal */
 p {
   font-size: 1.125rem !important;
-  margin: 0 !important;
+  /* margin: 0 !important; */
 }
 
 /* Buttons */
@@ -155,6 +155,9 @@ button {
   padding: 1em 1.5em;
   background-color: transparent;
   color: var(--primary-color);
+}
+.cta-buttons .check-our-video p {
+  margin: 0;
 }
 
 .mobile-images {
@@ -695,7 +698,7 @@ footer .copyright {
   background-color: var(--body-bg);
   color: #92a7b0;
   padding: 24px 150px;
-  border-top: 1px solid var(--secondary-color);
+  border-top: 1px solid black;
 }
 
 .terms,
@@ -716,6 +719,77 @@ footer .copyright {
 .language select:focus {
   border: none;
   outline: none;
+}
+
+/* COllaborators */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.collaborator-section {
+  background-color: var(--body-bg);
+  padding: 4rem;
+}
+.collaborator-container {
+  max-width: 650px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+
+/* Description Text */
+.description {
+  padding-bottom: 10px;
+}
+
+.academy-link {
+  color: #6439ff;
+  text-decoration: none;
+}
+
+.academy-link:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.collaborators {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.collaborators img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 769px) {
@@ -1104,5 +1178,9 @@ footer .copyright {
     padding: 20px;
     justify-content: center;
     align-items: center;
+  }
+  /* Collaborator section */
+  .collaborator-section {
+    padding: 1rem;
   }
 }
