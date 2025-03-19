@@ -29,6 +29,7 @@
 /* Universal */
 p {
   font-size: 1.125rem !important;
+  margin: 0 !important;
 }
 
 /* Buttons */
@@ -814,6 +815,11 @@ footer .copyright {
   .building-bridges {
     padding: 40px 0px;
   }
+  .building-bridges .info {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
   .building-bridges .info h1 {
     font-size: 1.5rem;
   }
@@ -824,6 +830,15 @@ footer .copyright {
   .numbers-section .sales {
     flex: 1 1 calc(50% - 32px);
     margin: 16px;
+  }
+  /* Founders Section */
+  .meet-founders {
+    padding: 40px 0px 0px 0px;
+    flex-direction: column;
+  }
+  .meet-founders .info {
+    padding: 0px;
+    text-align: center;
   }
 
   /* Testimonials */
