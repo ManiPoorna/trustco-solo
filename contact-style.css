@@ -189,15 +189,21 @@ textarea {
   flex: 1;
   padding: 12px;
   border: 1px solid #91a7b0;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 14px;
   outline: none;
   width: 100%;
 }
+.form-group input::placeholder,
+textarea::placeholder {
+  color: #91a7b0;
+}
+
 textarea {
   height: 220px;
   resize: none;
 }
+.checkbox-container,
 .checkbox {
   display: flex;
   align-items: center;
@@ -206,7 +212,7 @@ textarea {
   margin-bottom: 15px;
   margin-top: 1rem;
 }
-.checkbox input {
+.checkbox-container .checkbox input {
   border: none;
   background-color: red;
   padding: 10px;
@@ -257,7 +263,7 @@ textarea {
   font-size: 14px;
 }
 /* ?Chekcbox styling end */
-form .checkbox .submit-btn {
+form .checkbox-container .submit-btn {
   background-color: var(--primary-color);
   color: #fff;
   min-width: 150px;
@@ -322,8 +328,35 @@ form .checkbox .submit-btn {
   .header .cards .card {
     max-width: 100%;
   }
+  .header .cards .card .card-info {
+    margin: -1rem 0 1rem 0;
+  }
   .header .card .card-icon img {
     width: 55px;
     height: 55px;
+  }
+  /* Contact form */
+  .contact-form-content .container .heading {
+    max-width: 100%;
+  }
+  .contact-form-content .container h2 {
+    font-size: 2.125rem;
+  }
+  .contact-form-content .container {
+    padding: 0;
+  }
+  .contact-form-content .container .form-group {
+    flex-direction: column;
+  }
+  .checkbox-container{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  label.checkbox {
+    flex-direction: row;
+    margin: 0;
+  }
+  form .checkbox-container .submit-btn {
+    width: 100%;
   }
 }
